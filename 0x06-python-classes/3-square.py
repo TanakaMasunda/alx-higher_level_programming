@@ -16,4 +16,4 @@ class Square:
 
     def area(self):
         """ method to get area of the shape(square)"""
-        return (seif.__size ** 2)
+        return (self.__size ** 2)
