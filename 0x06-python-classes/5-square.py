@@ -28,8 +28,8 @@ class Square:
         if (self.__size == 0):
             print()
         else:
-            for rows in range(self.__size)
-            print("#" * self.__size)
+            for rows in range(self.__size):
+                print("#" * self.__size)
 
     @property
     def size(self):
