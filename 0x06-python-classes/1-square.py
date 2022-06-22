@@ -3,7 +3,8 @@
 
 
 class Square:
+    """ class to create a square with size"""
 
     def __init__(sel, square_size):
         """to construct the square"""
-        self.__ = square_size
+        self.__size = square_size
