@@ -1,5 +1,10 @@
 #!/usr/bin/python3
-""" class square with size defined by prev task"""
+"""
+class square with size defined by prev task
+-size property
+method of area and print square
+getters and setters
+"""
 
 
 class Square:
@@ -34,7 +39,7 @@ class Square:
     @size.setter
     def size(self, value):
         """setter to the private attribute size"""
-        if (type(value) in not int):
+        if (type(value) is not int):
             raise (TypeError("size must be an integer"))
         elif (value < 0):
             raise (ValueError("size must be >= 0"))
