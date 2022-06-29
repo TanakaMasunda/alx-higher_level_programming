@@ -25,7 +25,6 @@ def text_indentation(text):
         if text[c] == "\n" or text[c] in ".?:":
             if text[c] in ".?:":
                 print("\n")
-
             c += 1
             while c < len(text) and text[c] == ' ':
                 c += 1
