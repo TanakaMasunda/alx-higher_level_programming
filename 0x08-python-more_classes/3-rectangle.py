@@ -3,13 +3,7 @@
 
 
 class Rectangle:
-    """Rectangle class defined by width and height.
-    Attributes:
-        number_of_instances(int): number of Rectangle instances,
-        print symbols used for representation,
-        increments with every instantitation,
-        decrements with every deletion
-    """
+    """Rectangle class defined by width and height."""
 
     number_of_instances = 0
     print_symbol = '#'
@@ -23,7 +17,6 @@ class Rectangle:
         """
         self.width = width
         self.height = height
-        Rectangle.number_of_instances += 1
 
     def __str__(self):
         """Returns an informal and nitely printable string representation of a
@@ -38,17 +31,6 @@ class Rectangle:
                 rec_str += str(self.print_symbol)
             rec_str += '\n'
         return rec_str[:-1]
-
-    def __repr__(self):
-        """Return a string representation of a Rectangle instance
-        that is able to recreate a new instance by using eval()
-        """
-        return "Rectangle({}, {})".format(self.__width, self.__height)
-
-    def __del__(self):
-        """Deletes a Rectangle instance."""
-        print("Bye rectangle...")
-        Rectangle.number_of_instances -= 1
 
     @property
     def width(self):
