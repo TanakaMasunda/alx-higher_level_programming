@@ -14,7 +14,7 @@ class Student:
             last_name(string) is the last name of the student
             age(integer) is the age of the student
         """
-        self.first_name = first name
+        self.first_name = first_name
         self.last_name = last_name
         self.age = age
 
