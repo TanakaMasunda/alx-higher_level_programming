@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""class my_list with a text file"""
+"""
+class my_list with a text file
+"""
 
 
 class Mylist(list):
