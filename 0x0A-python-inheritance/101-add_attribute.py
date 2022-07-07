@@ -2,10 +2,10 @@
 """add attribute"""
 
 
-def add_attribute(clas, name, value):
+def add_attribute(cls, name, value):
     """
         add new attributes when possible
     """
-    if hasattr(clas, "__dict__") is False:
+    if hasattr(cls, "__dict__") is False:
         raise TypeError("cant add new attribute")
-    setattr(clas, name, value)
+    setattr(cls, name, value)
