@@ -101,7 +101,7 @@ class Rectangle(Base):
     def __str__(self):
         """Overrides the  __str__"""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
-                self.id, self.x, self.y, self.width, self.height)
+            self.id, self.x, self.y, self.width, self.height)
 
     def update(self, *args, **kwargs):
         """Updates instance attributes"""

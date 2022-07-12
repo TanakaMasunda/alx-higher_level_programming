@@ -13,7 +13,7 @@ class Square(Rectangle):
     def __str__(self):
         """Overrides the __str__"""
         return "[Square] ({:d}) {:d}/{:d} - {:d}".format(
-                self.id, self.x, self.y, self.width)
+            self.id, self.x, self.y, self.width)
 
     @property
     def size(self):
