@@ -94,9 +94,9 @@ class Rectangle(Base):
         """Print visual representation of instance"""
         if self.width == 0 or self.height == 0:
             print("")
-            row = (' ' * self.x) + ('#' * self.width) + '\n'
-            print(('\n' * self.y) + row * (self.height - 1) + (
-                (' ' * self.x) + ('#' * self.width)))
+        row = (' ' * self.x) + ('#' * self.width) + '\n'
+        print(('\n' * self.y) + row * (self.height - 1) + (
+            (' ' * self.x) + ('#' * self.width)))
 
     def __str__(self):
         """Overrides the  __str__"""
