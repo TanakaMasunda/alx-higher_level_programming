@@ -26,5 +26,5 @@ if __name__ == '__main__':
     for state in states:
         if state[1] == argv[4]:
             print(state)
-    cursor.close()
+    cur.close()
     db.close()
