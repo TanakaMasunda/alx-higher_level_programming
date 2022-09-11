@@ -23,7 +23,7 @@ if __name__ == '__main__':
             FROM cities LEFT JOIN states\
             ON states.id = cities.state_id\
             ORDER BY cities.id ASC")
-    states = cur.fetchall()
+    row = cur.fetchall()
 
-    for city in cities:
-        print(city)
+    for row in rows:
+        print(row)
