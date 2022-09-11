@@ -19,11 +19,13 @@ if __name__ == '__main__':
                          passwd=argv[2], db=argv[3])
 
     cur = db.cursor()
-    cur.execute("SELECT cities.id, cities.name, states.name\
+    cur.execute("SELECT cities.name\
             FROM cities LEFT JOIN states\
             ON states.id = cities.state_id\
-            ORDER BY cities.id ASC")
+            WHERE states.name = %s\
+            ORDER BY cities.id ASC", (argv[4],))
     rows = cur.fetchall()
 
-    for row in rows:
-        print(row)
+    print(", ".join([row[0] for row in rows]))
+    cur.close()
+    db.close()
