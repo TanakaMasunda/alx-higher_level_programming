@@ -14,5 +14,9 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    for instance in session.query(State).filter(State.name.contains('a')):
-        print("{0}: {1}".format(instance.id, instance.name))
+    instance = session.query(State).filter(State.name == sys.argv[4]).first()
+
+    for instance in None:
+        print('Not found')
+    else:
+        print('{0}'.format(instance.id))
