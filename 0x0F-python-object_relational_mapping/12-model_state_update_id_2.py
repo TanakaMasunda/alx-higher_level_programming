@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-This script deletes all State objects with a name containing the letter `a`
-from the database `hbtn_0e_6_usa`.
+This script changes name of a State object from the database `hbtn_0e_6_usa`.
 """
 
 from sys import argv
@@ -12,7 +11,7 @@ from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
     """
-    Deletes State objects on the database.
+    Updates a State object on the database.
     """
 
     db_uri = 'mysql+mysqldb://{}:{}@localhost:3306/{}'.format(
@@ -22,9 +21,7 @@ if __name__ == "__main__":
 
     session = Session()
 
-    for instance in session.query(State).filter(State.name.contains('a')):
-
-        session.delete(instance)
-
+    ari_state = session.query(State).filter(State.id == '2').first()
+    ari_state.name = 'New Mexico'
     session.commit()
     session.close()
