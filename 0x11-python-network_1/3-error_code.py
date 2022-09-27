@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""script that takes in a URL,send a request to the URL,display the body of the response (decoded in utf-8).
+"""script tht take URL,send a rqst to URL,display the body of response
+(decoded in utf-8).
 """
 
 

@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""script that fetche https://alx-intranet.hbtn.io/status.use urlib package only"""
+"""script tht fetche https://alx-intranet.hbtn.io/status.use urlib package only
+"""
 
 
 if __name__ == '__main__':

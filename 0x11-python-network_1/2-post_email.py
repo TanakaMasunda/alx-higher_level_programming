@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """script that takes in a URL,send POST request to passed URL,takes email as a
-parameter,display body of response,use with statement,only use sys and urllib   """
+parameter,display body of response,use with statement,only use sys and urllib
+"""
 
 import sys
 import urllib.parse
