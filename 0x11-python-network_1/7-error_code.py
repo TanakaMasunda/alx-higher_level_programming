@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""script that takes in a URL,send a request to the URL,display the body of the response.use request and sys packages only
+"""script that
+-takes in a URL,send a request to the URL,display the body of the response.
+-use request and sys packages only
 """
 
 import sys
