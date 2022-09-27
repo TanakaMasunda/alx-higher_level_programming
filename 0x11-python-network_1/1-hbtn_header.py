@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""script that takes in a URL,sends request to URL & displays the value of the X-Request-Id variable found in the header of the response.only use urllib and syspackages and with statement.
+"""script that takes
+    -in a URL,sends request to URL & displays the value of the X-Request-Id
+    -variable found in the header of the response.only use urllib and
+    - syspackages and with statement.
 """
 
 
